@@ -10,6 +10,8 @@ def timeConverter():
             menit = jam%60 #menggunakan modulus untuk menampilkan sisa bagi antara jam dengan menit
             detik = math.floor(menit/1) #menggunakan math.floor untuk menampilkan sisa bagi
             return "{}:{}:{}".format(Hours,Minutes,detik) #menggunakan return function untuk mengembalikan nilai hours,minutes.seconds dengan metode .format
+        else:
+            return "Invalid Input!"
     except:
         return "Invalid Input!" #mengembalikan nilai selain aturan def ini dengan return function untuk selain tipe ada int
 
